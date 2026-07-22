@@ -1,0 +1,216 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   /* ==========================================
+   THEME COLOR PALETTE (MEBELEVV FURNITURE)
+   ========================================== */
+
+  /* Brand Core Colors */
+  --bg-footer-dark: #2b1304;     /* Deep Espresso Brown for Footer & Dark CTA Buttons */
+  --bg-feature-cream: #fff7c2;   /* Soft Warm Yellow/Cream for Feature Sections */
+  --accent-terracotta: #b66238;  /* Warm Rust/Terracotta for Highlights & Furniture Tones */
+
+  /* Neutrals & Text */
+  --text-primary: #fff7c2;;       /* Dark Charcoal for Main Headings & Nav Header */
+  --text-secondary: #292929;     /* Muted Gray for Subheadings & Paragraphs */
+  --border-light: #e0e0e0;       /* Soft Gray for Accordion Dividers & Borders */
+  --bg-main: #ffffff;            /* Pure White for Main Card & Body Backgrounds */
+
+  /* UI */
+  --border: #e5e7eb;
+  --radius: 8px;
+  --shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  /* =========================
+     Font Sizes
+  ========================== */
+ --fs-display: clamp(2.5rem, 5vw, 4rem);
+  --fs-h1: clamp(2rem, 4vw, 3rem);
+  --fs-h2: clamp(1.5rem, 3vw, 2rem);
+  --fs-body: clamp(1rem, 1.2vw, 1.125rem);
+  --fs-small: clamp(0.875rem, 1vw, 1rem);
+
+
+   /* ==========================
+     Typography
+  ========================== */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ==========================
+     Spacing
+  ========================== */
+
+  --space-1: clamp(0.5rem, 1vw, 0.75rem);
+  --space-2: clamp(0.75rem, 1.5vw, 1rem);
+  --space-3: clamp(1rem, 2vw, 1.5rem);
+  --space-4: clamp(1.5rem, 3vw, 2rem);
+  --space-5: clamp(2rem, 4vw, 3rem);
+  --space-6: clamp(3rem, 6vw, 5rem);
+
+  /* ==========================
+     Radius
+  ========================== */
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* ==========================
+     Shadow
+  ========================== */
+
+  --shadow-sm: 0 2px 6px rgb(0 0 0 / 8%);
+  --shadow-md: 0 8px 20px rgb(0 0 0 / 12%);
+  --shadow-lg: 0 16px 40px rgb(0 0 0 / 18%);
+
+  /* ==========================
+     Motion
+  ========================== */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* ==========================
+     Layout
+  ========================== */
+
+  --container: 75rem; /* 1200px */
+  --header-height: 5rem; /* 80px */
+
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+body {
+   width: 100%;
+    background-color: rgb(112, 108, 108);
+}
+
+main {
+   width: 100%;
+   gap: var(--space-5);
+}
+header {
+   height: 70px;
+
+}
+
+nav {
+   width: 100%;
+   padding-inline: var(--space-2);
+   padding-block: var(--space-1);
+    color: var(--text-primary);
+
+}
+
+.logo {
+   font-size: var(--fs-h2);
+}
+
+ul {
+   gap: var(--space-3);
+   list-style-type: none;
+   display: none;
+}
+
+li a {
+    color: var(--text-primary);
+  text-decoration: none;
+}
+
+.landing-page  {
+   width: 100%;
+   height: calc(100dvh - 80px);
+   background-image: url("https://plus.unsplash.com/premium_photo-1677948482945-58c58d732238?q=80&w=803&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   align-items:center;
+   justify-content: end;
+   flex-direction: column;
+   backdrop-filter: blur(2px);
+   gap: var(--space-1);
+   padding-block: var(--space-2);
+}
+
+.landing-page h1 {
+   font-size: var(--fs-display);
+   text-transform: uppercase;
+    color: var(--text-primary);
+   letter-spacing: var(--space-1);
+
+}
+
+.landing-page i {
+   font-size: var(--fs-display);
+   color: var(--bg-feature-cream);
+
+}
+
+.sec2 {
+   padding-inline: var(--space-2);
+   padding-block: var(--space-1);
+   gap: var(--space-3);
+}
+
+.card-container {
+   overflow-x: auto;
+   gap: var(--space-5);
+}
+.card {
+   max-width: 320px;
+   gap: var(--space-2);
+}
+
+.card img {
+   aspect-ratio: 1;
+   border-radius: var(--radius-sm);
+}
+
+.card-container::-webkit-scrollbar{
+   display: none;
+}
+
+@media (min-width:694px) {
+   ul {
+      display: flex;
+   }
+}
