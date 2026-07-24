@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+ :root{
+  --color-background: #d4d4d4;
+
+ }
+@theme {
+  /* ========================================
+      COLORS
+  ======================================== */
+
+  /* Brand */
+  --color-primary: #272727;
+  --color-primary-dark: #121212;
+  --color-primary-light: #333333;
+
+  /* Backgrounds */
+  --color-background: #d4d4d4;
+  --color-background-light: #fdfcfc;
+  --color-background-dark: #2b1304;
+  --color-surface: #ffffff;
+
+  /* Text */
+  --color-text: #292929;
+  --color-text-light: #666666;
+  --color-text-white: #ffffff;
+  --color-heading-light: #fff7c2;
+
+  /* Border */
+  --color-border: #e5e7eb;
+
+  /* States */
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+  --color-info: #2563eb;
+
+  /* ========================================
+      TYPOGRAPHY
+  ======================================== */
+
+  --font-sans: "Poppins", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font Sizes */
+  --text-xs: clamp(.75rem, .7rem + .2vw, .875rem);
+  --text-sm: clamp(.875rem, .8rem + .2vw, 1rem);
+  --text-base: clamp(1rem, .95rem + .3vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + .5vw, 1.35rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --text-2xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --text-3xl: clamp(2.5rem, 2rem + 3vw, 4rem);
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* ========================================
+      BORDER RADIUS
+  ======================================== */
+
+  --radius-sm: .375rem;
+  --radius-md: .625rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ========================================
+      SHADOWS
+  ======================================== */
+
+  --shadow-sm: 0 2px 8px rgb(0 0 0 / .08);
+  --shadow-md: 0 8px 24px rgb(0 0 0 / .12);
+  --shadow-lg: 0 20px 40px rgb(0 0 0 / .18);
+
+  /* ========================================
+      CONTAINERS
+  ======================================== */
+
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-2xl: 1320px;
+}
