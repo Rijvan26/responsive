@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-  <div className='bg-[#070707]  max-w-full px-4 py-2 text-white'>
+  <div className='bg-[#070707ec]  max-w-full px-4 py-2 text-white'>
     <Home />
   </div>
   )
